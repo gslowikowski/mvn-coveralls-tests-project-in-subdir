@@ -1,0 +1,1 @@
+# mvn-coveralls-tests-project-in-subdir
