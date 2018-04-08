@@ -1,0 +1,16 @@
+language: java
+
+jdk: oraclejdk8
+
+before_script:
+  - cd foo
+
+script:
+  - mvn clean scoverage:report
+
+after_success:
+  - mvn coveralls:report
+
+cache:
+  directories:
+    - $HOME/.m2
